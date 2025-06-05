@@ -7,8 +7,6 @@ import re
 from boto3.dynamodb.conditions import Key, Attr
 
 def handler(event, context):
-  print('received event:')
-  print(event)
 
   if event.get('httpMethod') and event['httpMethod'] != 'POST':
     return {
@@ -16,8 +14,9 @@ def handler(event, context):
       'body': json.dumps({'message': 'Method Not Allowed, only POST is accepted'})
     }
 
-  name = event.get('name')
-  email = event.get('email')
+  body = json.loads(event['body'])
+  name = body.get('name')
+  email = body.get('email')
   if not name or not email:
     return {
       'statusCode': 400,
@@ -42,7 +41,7 @@ def handler(event, context):
   if response['Items']:
     return {
       'statusCode': 409,
-      'body': json.dumps({'message': 'Cet email est déjà utilisé.'})
+      'body': json.dumps({'message': 'This email is already used.'})
     }
 
   table.put_item(Item={
@@ -53,5 +52,5 @@ def handler(event, context):
 
   return {
     'statusCode': 200,
-    'body': json.dumps({'message': 'Utilisateur créé avec succès.'})
+    'body': json.dumps({'message': 'User created successfully.'})
   }

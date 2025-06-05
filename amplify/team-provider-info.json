@@ -37,7 +37,7 @@
       "function": {
         "saveUser": {
           "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
-          "s3Key": "amplify-builds/saveUser-516c657542434b456d45-build.zip"
+          "s3Key": "amplify-builds/saveUser-46464b39487744543066-build.zip"
         },
         "users": {},
         "getUser": {
