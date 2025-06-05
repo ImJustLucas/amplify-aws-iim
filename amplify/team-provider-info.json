@@ -1,0 +1,70 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awslucas2025-dev-0eac2-authRole",
+      "UnauthRoleArn": "arn:aws:iam::431515038574:role/amplify-awslucas2025-dev-0eac2-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::431515038574:role/amplify-awslucas2025-dev-0eac2-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-awslucas2025-dev-0eac2-deployment",
+      "UnauthRoleName": "amplify-awslucas2025-dev-0eac2-unauthRole",
+      "StackName": "amplify-awslucas2025-dev-0eac2",
+      "StackId": "arn:aws:cloudformation:eu-west-1:431515038574:stack/amplify-awslucas2025-dev-0eac2/c31b6e90-411c-11f0-873d-0a98b4c9b973",
+      "AmplifyAppId": "d2adktw5iniwnq"
+    },
+    "categories": {
+      "storage": {
+        "users": {}
+      },
+      "function": {
+        "saveUser": {},
+        "users": {}
+      }
+    }
+  },
+  "lucas": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awslucas2025-lucas-41028-authRole",
+      "UnauthRoleArn": "arn:aws:iam::431515038574:role/amplify-awslucas2025-lucas-41028-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::431515038574:role/amplify-awslucas2025-lucas-41028-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
+      "UnauthRoleName": "amplify-awslucas2025-lucas-41028-unauthRole",
+      "StackName": "amplify-awslucas2025-lucas-41028",
+      "StackId": "arn:aws:cloudformation:eu-west-1:431515038574:stack/amplify-awslucas2025-lucas-41028/61f393e0-4144-11f0-8bc9-0a910805685d",
+      "AmplifyAppId": "d2adktw5iniwnq"
+    },
+    "categories": {
+      "function": {
+        "saveUser": {
+          "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
+          "s3Key": "amplify-builds/saveUser-516c657542434b456d45-build.zip"
+        },
+        "users": {},
+        "getUser": {
+          "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
+          "s3Key": "amplify-builds/getUser-4d2b346a426839447262-build.zip"
+        },
+        "cryptoPrices": {
+          "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
+          "s3Key": "amplify-builds/cryptoPrices-4d71507a42324f546f66-build.zip"
+        },
+        "signeData": {
+          "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
+          "s3Key": "amplify-builds/signeData-5a433655337378514e4d-build.zip"
+        }
+      },
+      "api": {
+        "users": {},
+        "crypto": {}
+      },
+      "storage": {
+        "users": {},
+        "cryptoPrices": {},
+        "cryptostorage": {}
+      },
+      "auth": {
+        "awslucas20256633f017": {}
+      }
+    }
+  }
+}
