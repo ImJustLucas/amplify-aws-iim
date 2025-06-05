@@ -1,7 +1,8 @@
 import json
 import boto3
 import os
-from boto3.dynamodb.conditions import Key, Attr
+from boto3.dynamodb.conditions import Key
+import uuid
 
 def handler(event, context):
   print('received event:')

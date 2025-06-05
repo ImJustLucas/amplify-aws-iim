@@ -42,7 +42,7 @@
         "users": {},
         "getUser": {
           "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
-          "s3Key": "amplify-builds/getUser-4d2b346a426839447262-build.zip"
+          "s3Key": "amplify-builds/getUser-6a5a356276776f4e4841-build.zip"
         },
         "cryptoPrices": {
           "deploymentBucketName": "amplify-awslucas2025-lucas-41028-deployment",
